@@ -1,0 +1,2 @@
+# productManager_assistant
+这是一个帮助产品经理管理产品工作的开源项目
