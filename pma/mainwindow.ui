@@ -23,6 +23,16 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="caidan">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="actionJiuzuo"/>
+    <addaction name="actionXuqiushouji"/>
+    <addaction name="separator"/>
+    <addaction name="actionTuichu"/>
+   </widget>
+   <addaction name="caidan"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -33,6 +43,21 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionJiuzuo">
+   <property name="text">
+    <string>久坐提醒</string>
+   </property>
+  </action>
+  <action name="actionXuqiushouji">
+   <property name="text">
+    <string>需求收集</string>
+   </property>
+  </action>
+  <action name="actionTuichu">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

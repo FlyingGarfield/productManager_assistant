@@ -17,11 +17,15 @@ public:
     ~MainWindow();
 
 private:
+    void creatAction();
     Ui::MainWindow *ui;
     QSystemTrayIcon *trayicon;
-    QMenu *trayiconMenu;
-    void onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason reason);
+    QMenu *trayIconmenu;
     QAction *action_quit;
+    QAction *action_Jiuzuotixing;
+    QAction *action_Xuqiushouji;
+private slots:
+    void onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason reason);
 };
 
 #endif // MAINWINDOW_H
