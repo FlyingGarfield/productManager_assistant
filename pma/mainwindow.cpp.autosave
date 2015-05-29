@@ -35,6 +35,7 @@ void MainWindow::creatSystemicon()
 void MainWindow::creatAction()
 {
     connect(ui->actionTuichu,SIGNAL(triggered()),this,SLOT(close()));
+    
 }
 void MainWindow::creatTraymenu()
 {
