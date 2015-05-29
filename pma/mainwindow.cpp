@@ -34,23 +34,24 @@ void MainWindow::creatSystemicon()
 }
 void MainWindow::creatAction()
 {
-    connect(ui->actionTuichu,SIGNAL(triggered()),this,SLOT(close()));
+    connect(ui->actionTuichu,SIGNAL(triggered()),qApp,SLOT(quit()));
+    connect(ui->actionJiuzuo,SIGNAL(triggered()),this,SLOT(CreatJiuzuotx()));
 }
 void MainWindow::creatTraymenu()
 {
     creatAction();
     trayIconmenu=new QMenu(this);
+    trayIconmenu->addAction(ui->actionXuqiushouji);
+    trayIconmenu->addAction(ui->actionJiuzuo);
+    trayIconmenu->addSeparator();
     trayIconmenu->addAction(ui->actionTuichu);
 }
 void MainWindow::onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason reason)
 {
     switch(reason)
     {
-        case QSystemTrayIcon::Trigger:
-                showTraymessage();
-                break;
         case QSystemTrayIcon::DoubleClick:
-
+                show();
                 break;
         default:
                 break;
@@ -62,6 +63,18 @@ void MainWindow::showTraymessage()
     trayicon->showMessage(tr("产品经理助手"), tr("工作效率加倍提升！"),
                           QSystemTrayIcon::Information, 5000);
 }
+
+void MainWindow::CreatJiuzuotx()
+{
+    jiuzuotx=new jiuzuo();
+    jiuzuotx->show();
+}
+void MainWindow::closeEvent(QCloseEvent *e)
+{
+    e->ignore();
+    this->hide();
+}
+
 
 
 

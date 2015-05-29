@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    jiuzuo.cpp \
+    xuqiu.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    jiuzuo.h \
+    xuqiu.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    jiuzuo.ui \
+    xuqiu.ui
