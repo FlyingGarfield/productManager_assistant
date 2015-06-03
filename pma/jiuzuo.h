@@ -3,6 +3,9 @@
 
 #include <QWidget>
 #include <QCloseEvent>
+#include <QMessageBox>
+#include "pingbao.h"
+
 namespace Ui {
 class jiuzuo;
 }
@@ -17,7 +20,11 @@ public:
 
 private:
     Ui::jiuzuo *ui;
+    pingbao *pingBao;
+    QMessageBox *msgbox;
     void closeEvent(QCloseEvent *);
+private slots:
+    void modify();
 };
 
 #endif // JIUZUO_H
