@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    connect_db();
     creatSystemicon();
     showTraymessage();
 }
@@ -74,7 +74,22 @@ void MainWindow::closeEvent(QCloseEvent *e)
     e->ignore();
     this->hide();
 }
-
+void MainWindow::connect_db()
+{
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("pma");
+    db.open();
+    //QSqlQuery query;
+   /*
+    if (!db.open()) {
+            QMessageBox::critical(0, QObject::tr("Database Error"),
+                                  db.lastError().text());
+        }
+    if(!query.exec("create table test(i int)")) {
+        QMessageBox::critical(0, QObject::tr("Database Error"),
+                              db.lastError().text());
+    }*/
+}
 
 
 

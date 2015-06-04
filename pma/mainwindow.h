@@ -5,6 +5,7 @@
 #include <QSystemTrayIcon>
 #include <QAction>
 #include <QCloseEvent>
+#include <QtSql>
 #include "jiuzuo.h"
 
 namespace Ui {
@@ -24,11 +25,13 @@ private:
     QSystemTrayIcon *trayicon;
     QMenu *trayIconmenu;
     jiuzuo *jiuzuotx;
+    QSqlDatabase db;
     void creatSystemicon();
     void creatAction();
     void showTraymessage();
     void creatTraymenu();
     void closeEvent(QCloseEvent *);
+    void connect_db();
 private slots:
     void onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason reason);
     void CreatJiuzuotx();

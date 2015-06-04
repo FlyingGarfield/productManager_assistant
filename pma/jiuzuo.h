@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QCloseEvent>
 #include <QMessageBox>
+#include <QDebug>
+#include <QSqlQuery>
 #include "pingbao.h"
 
 namespace Ui {

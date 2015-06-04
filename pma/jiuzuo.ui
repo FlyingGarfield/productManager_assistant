@@ -87,7 +87,7 @@
     <string>立即体验</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -105,7 +105,11 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="tixingTime"/>
+     <widget class="QLineEdit" name="tixingTime">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </item>
     <item>
      <widget class="QLabel" name="label_2">
@@ -116,7 +120,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -145,7 +149,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -186,9 +190,7 @@
   <zorder>layoutWidget</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>layoutWidget</zorder>
-  <zorder>layoutWidget</zorder>
   <zorder>xiugai</zorder>
-  <zorder>graphicsView</zorder>
   <zorder>imgLabel</zorder>
   <zorder>pushButton</zorder>
   <zorder>label_6</zorder>

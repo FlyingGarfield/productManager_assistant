@@ -21,6 +21,6 @@ void pingbao::keyPressEvent(QKeyEvent *event)
 {
     if(event->key()==Qt::Key_Escape)
     {
-        showNormal();
+        hide();
     }
 }

@@ -4,8 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-QT       += sql
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,14 +16,23 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     jiuzuo.cpp \
     xuqiu.cpp \
-    pingbao.cpp
+    pingbao.cpp \
+    tasktime.cpp \
+    tasklist.cpp \
+    xiuqiulist.cpp
 
 HEADERS  += mainwindow.h \
     jiuzuo.h \
     xuqiu.h \
-    pingbao.h
+    pingbao.h \
+    tasktime.h \
+    tasklist.h \
+    xiuqiulist.h
 
 FORMS    += mainwindow.ui \
     jiuzuo.ui \
     xuqiu.ui \
-    pingbao.ui
+    pingbao.ui \
+    tasktime.ui \
+    tasklist.ui \
+    xiuqiulist.ui
