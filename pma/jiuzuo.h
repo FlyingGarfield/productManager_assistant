@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include <QDebug>
 #include <QSqlQuery>
+#include <QFileDialog>
 #include "pingbao.h"
 
 namespace Ui {
@@ -24,9 +25,12 @@ private:
     Ui::jiuzuo *ui;
     pingbao *pingBao;
     QMessageBox *msgbox;
+    QSqlQuery query;
+    QString fileURL;
     void closeEvent(QCloseEvent *);
 private slots:
     void modify();
+    void getURL();
 };
 
 #endif // JIUZUO_H

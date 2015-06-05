@@ -1,7 +1,7 @@
 #include "pingbao.h"
 #include "ui_pingbao.h"
 
-pingbao::pingbao(QWidget *parent,int dispType) :
+pingbao::pingbao(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::pingbao)
 {

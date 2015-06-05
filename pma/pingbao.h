@@ -12,7 +12,7 @@ class pingbao : public QWidget
     Q_OBJECT
 
 public:
-    explicit pingbao(QWidget *parent = 0, int dispType=0);
+    explicit pingbao(QWidget *parent = 0);
     ~pingbao();
 
 protected:
