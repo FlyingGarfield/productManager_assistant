@@ -37,13 +37,20 @@ void MainWindow::creatAction()
 {
     connect(ui->actionTuichu,SIGNAL(triggered()),qApp,SLOT(quit()));
     connect(ui->actionJiuzuo,SIGNAL(triggered()),this,SLOT(CreatJiuzuotx()));
+    connect(ui->actionRenwu,SIGNAL(triggered()),this,SLOT(CreatTasklist()));
+    connect(ui->actionShalou,SIGNAL(triggered()),this,SLOT(CreatTasktime()));
+    connect(ui->actionXiangmu,SIGNAL(triggered()),this,SLOT(CreatProgram()));
+    connect(ui->actionXueqiuguanli,SIGNAL(triggered()),this,SLOT(CreatXuqiu()));
 }
 void MainWindow::creatTraymenu()
 {
     creatAction();
     trayIconmenu=new QMenu(this);
-    trayIconmenu->addAction(ui->actionXuqiushouji);
+    trayIconmenu->addAction(ui->actionXueqiuguanli);
     trayIconmenu->addAction(ui->actionJiuzuo);
+    trayIconmenu->addAction(ui->actionRenwu);
+    trayIconmenu->addAction(ui->actionXiangmu);
+    trayIconmenu->addAction(ui->actionShalou);
     trayIconmenu->addSeparator();
     trayIconmenu->addAction(ui->actionTuichu);
 }
@@ -90,6 +97,26 @@ void MainWindow::connect_db()
         QMessageBox::critical(0, QObject::tr("Database Error"),
                               db.lastError().text());
     }*/
+}
+void MainWindow::CreatXuqiu()
+{
+    xuQiu =new xuqiu();
+    xuQiu->show();
+}
+void MainWindow::CreatTasklist()
+{
+    taskLsit = new tasklist();
+    taskLsit->show();
+}
+void MainWindow::CreatTasktime()
+{
+    taskTime = new tasktime();
+    taskTime->show();
+}
+void MainWindow::CreatProgram()
+{
+    proGram = new program();
+    proGram->show();
 }
 
 

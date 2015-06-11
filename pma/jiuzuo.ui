@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>307</width>
-    <height>300</height>
+    <width>316</width>
+    <height>337</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>270</y>
+     <y>310</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>80</y>
+     <y>120</y>
      <width>171</width>
      <height>141</height>
     </rect>
@@ -51,21 +51,21 @@
   <widget class="QPushButton" name="xztupian">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>230</y>
-     <width>80</width>
+     <x>70</x>
+     <y>270</y>
+     <width>171</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>选择图片</string>
+    <string>选择屏保图片</string>
    </property>
   </widget>
   <widget class="QPushButton" name="lijitiyan">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>270</y>
+     <y>310</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -136,6 +136,46 @@
     </item>
    </layout>
   </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>171</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>是否开启：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>是</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="text">
+       <string>否</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>xiugai</zorder>

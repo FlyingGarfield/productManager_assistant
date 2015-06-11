@@ -19,7 +19,7 @@ SOURCES += main.cpp\
     pingbao.cpp \
     tasktime.cpp \
     tasklist.cpp \
-    xiuqiulist.cpp
+    program.cpp
 
 HEADERS  += mainwindow.h \
     jiuzuo.h \
@@ -27,7 +27,7 @@ HEADERS  += mainwindow.h \
     pingbao.h \
     tasktime.h \
     tasklist.h \
-    xiuqiulist.h
+    program.h
 
 FORMS    += mainwindow.ui \
     jiuzuo.ui \
@@ -35,4 +35,4 @@ FORMS    += mainwindow.ui \
     pingbao.ui \
     tasktime.ui \
     tasklist.ui \
-    xiuqiulist.ui
+    program.ui

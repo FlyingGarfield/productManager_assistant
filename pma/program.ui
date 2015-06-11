@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>tasklist</class>
- <widget class="QWidget" name="tasklist">
+ <class>program</class>
+ <widget class="QWidget" name="program">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>558</width>
-    <height>305</height>
+    <width>628</width>
+    <height>325</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,51 +16,56 @@
   <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>60</y>
-     <width>401</width>
+     <x>60</x>
+     <y>40</y>
+     <width>501</width>
      <height>192</height>
     </rect>
    </property>
    <column>
     <property name="text">
-     <string>任务ID</string>
+     <string>项目ID</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>任务名称</string>
+     <string>项目名称</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>任务优先级</string>
+     <string>计划完成时间</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>任务状态</string>
+     <string>项目负责人</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>项目状态</string>
     </property>
    </column>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>270</y>
+     <x>170</x>
+     <y>250</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>添加新任务</string>
+    <string>添加新项目</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>30</y>
+     <x>330</x>
+     <y>10</y>
      <width>151</width>
      <height>22</height>
     </rect>
@@ -87,28 +92,33 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>270</y>
+     <x>320</x>
+     <y>250</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>删除任务</string>
+    <string>删除项目</string>
    </property>
   </widget>
-  <widget class="QWidget" name="layoutWidget_3">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>30</y>
-     <width>131</width>
+     <x>91</x>
+     <y>10</y>
+     <width>211</width>
      <height>22</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>排序：</string>
       </property>
@@ -118,7 +128,7 @@
      <widget class="QComboBox" name="comboBox_2">
       <item>
        <property name="text">
-        <string>优先级</string>
+        <string>计划完成时间</string>
        </property>
       </item>
      </widget>

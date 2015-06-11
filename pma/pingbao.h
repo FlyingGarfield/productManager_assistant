@@ -3,6 +3,12 @@
 
 #include <QWidget>
 #include <QKeyEvent>
+#include <QSqlQuery>
+#include <QMessageBox>
+#include <QPalette>
+#include <QDateTime>
+#include <QTimer>
+
 namespace Ui {
 class pingbao;
 }
@@ -19,6 +25,13 @@ protected:
     void keyPressEvent(QKeyEvent *event);
 private:
     Ui::pingbao *ui;
+    QSqlQuery query;
+    QString fileURL;
+    QPalette palet;
+    QTimer current_timer;
+    QTimer count_timer;
+    QDateTime current_time;
+    void update_img();
 private slots:
     void show();
 };

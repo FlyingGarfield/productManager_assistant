@@ -31,6 +31,7 @@ private:
 private slots:
     void modify();
     void getURL();
+    void update_img();
 };
 
 #endif // JIUZUO_H
