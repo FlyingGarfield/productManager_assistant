@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect_db();
     creatSystemicon();
     showTraymessage();
+    jiuzuotx=new jiuzuo();
 }
 
 MainWindow::~MainWindow()
@@ -74,7 +75,6 @@ void MainWindow::showTraymessage()
 
 void MainWindow::CreatJiuzuotx()
 {
-    jiuzuotx=new jiuzuo();
     jiuzuotx->show();
 }
 void MainWindow::closeEvent(QCloseEvent *e)

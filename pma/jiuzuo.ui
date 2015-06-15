@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>久坐提醒设置</string>
+   <string>健康提醒</string>
   </property>
   <widget class="QPushButton" name="xiugai">
    <property name="geometry">
@@ -136,44 +136,47 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QRadioButton" name="radioButtonYES">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>140</x>
      <y>80</y>
-     <width>171</width>
-     <height>18</height>
+     <width>31</width>
+     <height>16</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
-    <item>
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>是否开启：</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QCheckBox" name="checkBox">
-      <property name="text">
-       <string>是</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QCheckBox" name="checkBox_2">
-      <property name="text">
-       <string>否</string>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-      <property name="tristate">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string>是</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonNO">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>否</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>81</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>是否开启：</string>
+   </property>
   </widget>
   <zorder>layoutWidget</zorder>
   <zorder>layoutWidget</zorder>
@@ -182,6 +185,8 @@
   <zorder>imgLabel</zorder>
   <zorder>xztupian</zorder>
   <zorder>lijitiyan</zorder>
+  <zorder>radioButtonYES</zorder>
+  <zorder>radioButtonNO</zorder>
  </widget>
  <resources/>
  <connections/>

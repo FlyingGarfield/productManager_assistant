@@ -1,4 +1,4 @@
-#ifndef PINGBAO_H
+﻿#ifndef PINGBAO_H
 #define PINGBAO_H
 
 #include <QWidget>
@@ -28,12 +28,21 @@ private:
     QSqlQuery query;
     QString fileURL;
     QPalette palet;
-    QTimer current_timer;
-    QTimer count_timer;
+    QTimer *xiuxi_timer;
+    QTimer *tixing_timer;
     QDateTime current_time;
+    int time1;
+    int time2;
+    int tixing_time;
+    int xiuxi_time;
+    int type;
     void update_img();
+
 private slots:
     void show();
+    void tixing_slot();
+    void xiuxi_slot();
+    void refresh();
 };
 
 #endif // PINGBAO_H

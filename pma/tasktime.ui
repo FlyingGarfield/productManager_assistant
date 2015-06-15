@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>时间沙漏</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -121,7 +121,7 @@
    </property>
    <column>
     <property name="text">
-     <string>新建列</string>
+     <string>事务ID</string>
     </property>
    </column>
    <column>

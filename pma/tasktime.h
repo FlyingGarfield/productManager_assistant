@@ -2,7 +2,7 @@
 #define TASKTIME_H
 
 #include <QWidget>
-
+#include <QInputDialog>
 namespace Ui {
 class tasktime;
 }
@@ -17,6 +17,8 @@ public:
 
 private:
     Ui::tasktime *ui;
+private slots:
+    void slot_name();
 };
 
 #endif // TASKTIME_H
