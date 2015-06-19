@@ -13,54 +13,6 @@
   <property name="windowTitle">
    <string>项目管理</string>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>40</y>
-     <width>501</width>
-     <height>192</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>项目ID</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>项目名称</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>计划完成时间</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>项目负责人</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>项目状态</string>
-    </property>
-   </column>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>250</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>添加新项目</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
@@ -79,35 +31,37 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="zt">
+      <item>
+       <property name="text">
+        <string>无</string>
+       </property>
+      </item>
       <item>
        <property name="text">
         <string>未完成</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>已完成</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>延期</string>
        </property>
       </item>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>250</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>删除项目</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>91</x>
      <y>10</y>
-     <width>211</width>
+     <width>226</width>
      <height>22</height>
     </rect>
    </property>
@@ -120,17 +74,77 @@
        </font>
       </property>
       <property name="text">
-       <string>排序：</string>
+       <string>按计划时间排序：</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="time">
       <item>
        <property name="text">
-        <string>计划完成时间</string>
+        <string>无</string>
        </property>
       </item>
+      <item>
+       <property name="text">
+        <string>由早到晚</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>由晚到早</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>531</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>250</y>
+     <width>320</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="tianjia">
+      <property name="text">
+       <string>添加新项目</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="shanchu">
+      <property name="text">
+       <string>删除项目</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="queren">
+      <property name="text">
+       <string>确认修改</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="chexiao">
+      <property name="text">
+       <string>撤销修改</string>
+      </property>
      </widget>
     </item>
    </layout>

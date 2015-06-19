@@ -1,4 +1,4 @@
-#include "jiuzuo.h"
+﻿#include "jiuzuo.h"
 #include "ui_jiuzuo.h"
 
 jiuzuo::jiuzuo(QWidget *parent) :
@@ -36,7 +36,7 @@ void jiuzuo::closeEvent(QCloseEvent *e)
 }
 void jiuzuo::modify()
 {
-    msgbox=new QMessageBox(QMessageBox::Information,tr("提示"),tr("确定修改提醒设置吗？"),QMessageBox::Yes|QMessageBox::No,NULL);
+    msgbox=new QMessageBox(QMessageBox::Information,QString::fromLocal8Bit("提示"),QString::fromLocal8Bit("确定修改提醒设置吗？"),QMessageBox::Yes|QMessageBox::No,NULL);
     if(msgbox->exec()==QMessageBox::Yes){
         query.prepare("update jiuzuo set tixing = :tixing,xiuxi = :xiuxi,url = :url,type = :type where id =0");
         query.bindValue(":tixing",ui->tixingTime->text().toInt());

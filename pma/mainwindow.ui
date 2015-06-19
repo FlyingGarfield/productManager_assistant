@@ -19,7 +19,7 @@
      <rect>
       <x>80</x>
       <y>80</y>
-      <width>231</width>
+      <width>171</width>
       <height>41</height>
      </rect>
     </property>
@@ -29,7 +29,7 @@
      </font>
     </property>
     <property name="text">
-     <string>未完成任务数量：   7 </string>
+     <string>未完成任务数量：</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -37,7 +37,7 @@
      <rect>
       <x>80</x>
       <y>130</y>
-      <width>231</width>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>
@@ -47,7 +47,7 @@
      </font>
     </property>
     <property name="text">
-     <string>未完成项目数量：   7 </string>
+     <string>未完成项目数量：  </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -55,7 +55,7 @@
      <rect>
       <x>80</x>
       <y>170</y>
-      <width>231</width>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>
@@ -65,7 +65,7 @@
      </font>
     </property>
     <property name="text">
-     <string>未处理需求数量：   7 </string>
+     <string>未处理需求数量： </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">

@@ -13,53 +13,103 @@
   <property name="windowTitle">
    <string>任务管理</string>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>60</x>
      <y>60</y>
-     <width>401</width>
-     <height>192</height>
+     <width>441</width>
+     <height>191</height>
     </rect>
    </property>
-   <column>
-    <property name="text">
-     <string>任务ID</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>任务名称</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>任务优先级</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>任务状态</string>
-    </property>
-   </column>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>270</y>
-     <width>75</width>
-     <height>23</height>
+     <x>120</x>
+     <y>260</y>
+     <width>320</width>
+     <height>25</height>
     </rect>
    </property>
-   <property name="text">
-    <string>添加新任务</string>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QPushButton" name="tianjia">
+      <property name="text">
+       <string>添加新任务</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="shanchu">
+      <property name="text">
+       <string>删除任务</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="queren">
+      <property name="text">
+       <string>确认修改</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="chexiao">
+      <property name="text">
+       <string>撤销修改</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>30</y>
+     <width>142</width>
+     <height>22</height>
+    </rect>
    </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>优先级排序：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="yxj">
+      <item>
+       <property name="text">
+        <string>无</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>高</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>低</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>280</x>
      <y>30</y>
      <width>151</width>
      <height>22</height>
@@ -74,51 +124,25 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="zt">
+      <item>
+       <property name="text">
+        <string>无</string>
+       </property>
+      </item>
       <item>
        <property name="text">
         <string>未完成</string>
        </property>
       </item>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>270</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>删除任务</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="layoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>30</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
-    <item>
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>排序：</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBox_2">
       <item>
        <property name="text">
-        <string>优先级</string>
+        <string>已完成</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>延期</string>
        </property>
       </item>
      </widget>

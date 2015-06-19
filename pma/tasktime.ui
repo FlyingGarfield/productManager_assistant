@@ -49,12 +49,12 @@
     <string>剩余工作时间：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="fen">
    <property name="geometry">
     <rect>
      <x>380</x>
      <y>40</y>
-     <width>71</width>
+     <width>21</width>
      <height>16</height>
     </rect>
    </property>
@@ -64,33 +64,8 @@
     </font>
    </property>
    <property name="text">
-    <string>25分00秒</string>
+    <string>25</string>
    </property>
-  </widget>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>70</y>
-     <width>291</width>
-     <height>192</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>任务ID</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>任务名称</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>任务优先级</string>
-    </property>
-   </column>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
@@ -110,31 +85,6 @@
     <string>未完成任务列表</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>370</x>
-     <y>70</y>
-     <width>301</width>
-     <height>192</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>事务ID</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>事务名称</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>完成时间</string>
-    </property>
-   </column>
-  </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
@@ -151,6 +101,75 @@
    </property>
    <property name="text">
     <string>沙漏时间内完成事务列表</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="renwu">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>311</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableView" name="shiwu">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>80</y>
+     <width>311</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miao">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>40</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>00</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miao_2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>40</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>0</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提前完成</string>
    </property>
   </widget>
  </widget>

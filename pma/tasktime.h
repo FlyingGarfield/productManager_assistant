@@ -3,6 +3,16 @@
 
 #include <QWidget>
 #include <QInputDialog>
+#include <QSqlTableModel>
+#include <QCloseEvent>
+#include <QTableView>
+#include <QMessageBox>
+#include <QSqlError>
+#include <QDebug>
+#include <QString>
+#include <QSqlRecord>
+#include <QTimer>
+
 namespace Ui {
 class tasktime;
 }
@@ -17,8 +27,20 @@ public:
 
 private:
     Ui::tasktime *ui;
+    QSqlTableModel *model1;
+    QSqlTableModel *model2;
+    QSqlRecord record;
+    QTimer *timer1;
+    int time1;
+    int time2;
+
 private slots:
     void slot_name();
+    void closeEvent(QCloseEvent *);
+    void xiuxi_slot();
+    void start();
+    void jieshu();
+
 };
 
 #endif // TASKTIME_H

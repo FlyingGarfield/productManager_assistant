@@ -116,4 +116,5 @@ void pingbao::refresh()
     {
         tixing_timer->start(1000);
     }
+    update_img();
 }

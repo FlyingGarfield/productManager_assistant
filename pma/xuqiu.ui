@@ -13,47 +13,12 @@
   <property name="windowTitle">
    <string>需求管理</string>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>501</width>
-     <height>192</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>需求ID</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>需求名称</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>需求类别</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>需求优先级</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>需求状态</string>
-    </property>
-   </column>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>10</y>
-     <width>131</width>
+     <width>142</width>
      <height>22</height>
     </rect>
    </property>
@@ -61,15 +26,30 @@
     <item>
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>排序：</string>
+       <string>优先级排序：</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="yxj">
       <item>
        <property name="text">
-        <string>优先级</string>
+        <string>无</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>高</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>低</string>
        </property>
       </item>
      </widget>
@@ -79,7 +59,7 @@
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>330</x>
      <y>10</y>
      <width>151</width>
      <height>22</height>
@@ -94,20 +74,30 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="zt">
+      <item>
+       <property name="text">
+        <string>无</string>
+       </property>
+      </item>
       <item>
        <property name="text">
         <string>未处理</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>已处理</string>
        </property>
       </item>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="tianjia">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>100</x>
      <y>250</y>
      <width>75</width>
      <height>23</height>
@@ -117,10 +107,10 @@
     <string>添加新需求</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="shanchu">
    <property name="geometry">
     <rect>
-     <x>290</x>
+     <x>200</x>
      <y>250</y>
      <width>75</width>
      <height>23</height>
@@ -130,12 +120,48 @@
     <string>删除需求</string>
    </property>
   </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>511</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="queren">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chexiao">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>撤销修改</string>
+   </property>
+  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>10</y>
-     <width>89</width>
+     <x>31</x>
+     <y>11</y>
+     <width>141</width>
      <height>22</height>
     </rect>
    </property>
@@ -148,15 +174,53 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="leibie">
+      <item>
+       <property name="text">
+        <string>无</string>
+       </property>
+      </item>
       <item>
        <property name="text">
         <string>bug</string>
        </property>
       </item>
+      <item>
+       <property name="text">
+        <string>优化</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>新功能</string>
+       </property>
+      </item>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="chaxun">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询类别</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <resources/>

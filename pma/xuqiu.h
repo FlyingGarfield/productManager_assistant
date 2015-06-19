@@ -1,8 +1,14 @@
-#ifndef XUQIU_H
+﻿#ifndef XUQIU_H
 #define XUQIU_H
 
 #include <QWidget>
 #include <QCloseEvent>
+#include <QSqlTableModel>
+#include <QTableView>
+#include <QMessageBox>
+#include <QSqlError>
+#include <QDebug>
+#include <QString>
 namespace Ui {
 class xuqiu;
 }
@@ -17,7 +23,17 @@ public:
 
 private:
     Ui::xuqiu *ui;
+    QSqlTableModel *model;
     void closeEvent(QCloseEvent *);
+private slots:
+    void queren();
+    void tianjia();
+    void shanchu();
+    void chexiao();
+    void leibie(QString);
+    void yxj(QString);
+    void zt(QString);
+    void chaxun();
 };
 
 #endif // XUQIU_H
